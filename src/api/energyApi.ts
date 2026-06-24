@@ -1,6 +1,6 @@
 import type { DailyEnergyMix, OptimalWindow } from '../types/energy'
 
-const BASE_URL = 'http://localhost:8080/api'
+const BASE_URL = 'https://energy-backend-8wur.onrender.com/api'
 
 export async function getEnergyMix(): Promise<DailyEnergyMix[]> {
     const response = await fetch(`${BASE_URL}/energy-mix`)
