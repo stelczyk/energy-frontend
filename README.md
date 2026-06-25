@@ -29,4 +29,4 @@ npm install
 npm run dev
 ```
 
-> Backend is deployed at https://energy-backend-8wur.onrender.com — no additional configuration needed.
+> Backend is already deployed, so no additional configuration is needed.
