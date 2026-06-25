@@ -5,7 +5,8 @@ React + TypeScript app that visualises the energy generation mix for Great Brita
 ## Live
 
 - **App:** https://energy-frontend-zawz.onrender.com
-- **Backend:** https://energy-backend-8wur.onrender.com
+- **Backend – Energy Mix:** https://energy-backend-8wur.onrender.com/api/energy-mix
+- **Backend – Optimal Window (3h):** https://energy-backend-8wur.onrender.com/api/optimal-window?hours=3
 
 > First request may take up to 60 seconds (free Render instance).
 
