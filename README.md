@@ -1,32 +1,31 @@
-# React + TypeScript + Vite
+# Energy Mix Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React + TypeScript app that visualises the energy generation mix for Great Britain and helps find the optimal EV charging window.
 
-Currently, two official plugins are available:
+## Live
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **App:** https://energy-frontend-zawz.onrender.com
+- **Backend:** https://energy-backend-8wur.onrender.com
 
-## React Compiler
+> First request may take up to 60 seconds (free Render instance).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the Oxlint configuration
+- React 19, TypeScript, Vite, Recharts
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Features
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- Three pie charts showing daily energy mix for today, tomorrow and the day after
+- Clean energy percentage indicator per day
+- Optimal EV charging window calculator (1–6 hours)
+
+## Run Locally
+
+```bash
+git clone https://github.com/stelczyk/energy-frontend
+cd energy-frontend
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+> Backend is deployed at https://energy-backend-8wur.onrender.com — no additional configuration needed.
